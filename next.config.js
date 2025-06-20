@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ✅ 静的出力設定 ← これ最上段でOK！
-  output: 'export',
+  output: 'export', // ✅ これOK！
+  basePath: '/hayato-kogyo', // ✅ 追加！
+  assetPrefix: '/hayato-kogyo/', // ✅ 追加！
 
-  // 画像最適化の設定
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],
   },
-
-  // サーバーコンポーネントの最適化
   serverExternalPackages: [],
 };
 
