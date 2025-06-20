@@ -1,0 +1,151 @@
+/* 波のアニメーション - 無効化 */
+.wave-animation {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  /* アニメーション無効化 */
+  animation: none;
+  pointer-events: none;
+  display: none; /* 完全に非表示 */
+}
+
+.wave-animation:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  left: -50px;
+  bottom: -50px;
+  animation-delay: 0s;
+}
+
+.wave-animation:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  right: -100px;
+  top: -100px;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* メインビジュアルの波エフェクト - 無効化 */
+.wave-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.3' d='M0,160L48,176C96,192,192,224,288,234.7C384,245,480,235,576,202.7C672,171,768,117,864,117.3C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* アニメーション無効化 */
+  animation: none;
+  opacity: 0.8;
+  display: none; /* 完全に非表示 */
+}
+
+.wave-effect:nth-child(2) {
+  opacity: 0.5;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M0,64L48,96C96,128,192,192,288,192C384,192,480,128,576,128C672,128,768,192,864,197.3C960,203,1056,149,1152,138.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* アニメーション無効化 */
+  animation: none;
+  display: none; /* 完全に非表示 */
+}
+
+@keyframes wave-move {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1440px;
+  }
+}
+
+/* 水のカードスタイル */
+.water-card {
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.05));
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  transition: all 0.3s ease;
+}
+
+.water-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  transform: translateY(-5px);
+}
+
+/* 水の波紋エフェクト */
+.water-ripple {
+  background: linear-gradient(to bottom, rgba(240, 249, 255, 0.8), rgba(224, 242, 255, 0.5));
+  position: relative;
+  overflow: hidden;
+}
+
+/* 水のセクション中央寄せ */
+.water-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* コンテンツ中央寄せ */
+.content-centered {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* 水テーマの区切り線 */
+.water-divider {
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.5), transparent);
+  height: 2px;
+  width: 50%;
+  margin: 0 auto 2rem;
+}
+
+/* キラキラエフェクト */
+.shimmer-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  animation: shimmer 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-150%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(150%) rotate(30deg);
+  }
+}

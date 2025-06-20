@@ -1,0 +1,229 @@
+/* 水のエフェクト関連のスタイル */
+
+/* 水のシマーエフェクト */
+.water-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.water-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+  transform: rotate(30deg);
+  animation: shimmer 4s infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) rotate(30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(30deg);
+  }
+}
+.water-ripple {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgba(229, 244, 255, 0.5) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.water-ripple::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  opacity: 0.6;
+  animation: ripple 10s infinite linear;
+  pointer-events: none;
+}
+
+.water-gradient {
+  background: linear-gradient(180deg, #e6f7ff 0%, #ffffff 100%);
+}
+
+/* 波のアニメーション */
+.wave-animation {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: wave 3s infinite;
+  pointer-events: none;
+}
+
+.wave-animation:nth-child(1) {
+  width: 200px;
+  height: 200px;
+  left: -50px;
+  bottom: -50px;
+  animation-delay: 0s;
+}
+
+.wave-animation:nth-child(2) {
+  width: 300px;
+  height: 300px;
+  right: -100px;
+  top: -100px;
+  animation-delay: 1s;
+  animation-duration: 5s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* メインビジュアルの波エフェクト */
+.wave-effect {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.3' d='M0,160L48,176C96,192,192,224,288,234.7C384,245,480,235,576,202.7C672,171,768,117,864,117.3C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: wave-move 20s linear infinite;
+  opacity: 0.8;
+}
+
+.wave-effect:nth-child(2) {
+  opacity: 0.5;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.4' d='M0,64L48,96C96,128,192,192,288,192C384,192,480,128,576,128C672,128,768,192,864,197.3C960,203,1056,149,1152,138.7C1248,128,1344,160,1392,176L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: wave-move 15s linear infinite reverse;
+}
+
+@keyframes wave-move {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1440px;
+  }
+}
+
+.water-card {
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 16px rgba(31, 134, 220, 0.15);
+  transition: all 0.3s ease;
+}
+
+.water-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(31, 134, 220, 0.25);
+  border: 1px solid rgba(31, 134, 220, 0.5);
+}
+
+.water-section {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.water-divider {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #4fa8e0, transparent);
+  margin: 2rem auto;
+  width: 60%;
+  opacity: 0.7;
+}
+
+@keyframes ripple {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+.blue-glow {
+  box-shadow: 0 0 15px rgba(79, 168, 224, 0.5);
+}
+
+.content-centered {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* 波のアニメーション */
+.wave-animation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('/images/wave.svg') repeat-x;
+  background-size: 1000px 100px;
+  opacity: 0.2;
+  animation: wave 20s linear infinite;
+}
+
+.wave-animation:nth-child(2) {
+  opacity: 0.1;
+  animation: wave-reverse 15s linear infinite;
+  bottom: 10px;
+  height: 80px;
+}
+
+@keyframes wave {
+  0% { background-position-x: 0; }
+  100% { background-position-x: 1000px; }
+}
+
+@keyframes wave-reverse {
+  0% { background-position-x: 1000px; }
+  100% { background-position-x: 0; }
+}
+
+/* スクロールに応じた要素表示 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* スマートフォンのレスポンシブ対応 */
+@media (max-width: 640px) {
+  .water-section {
+    padding: 1rem;
+  }
+  
+  .content-centered {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

@@ -1,0 +1,2 @@
+# hayato-kogyo
+hayato-kogyo

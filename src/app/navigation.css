@@ -1,0 +1,10 @@
+/* ナビゲーションアクティブスタイル */
+a[data-active="true"] {
+  color: #2563eb; /* text-primary-600 */
+  border-bottom: 2px solid #2563eb;
+}
+
+/* ホバー効果をスムーズに */
+nav a {
+  transition: all 0.2s ease-in-out;
+}
