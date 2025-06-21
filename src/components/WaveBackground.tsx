@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { ReactNode } from 'react';
+import getConfig from 'next/config';
 
 interface WaveBackgroundProps {
   children: ReactNode;
@@ -18,12 +19,16 @@ export default function WaveBackground({
   bgColor = 'bg-white',
   id
 }: WaveBackgroundProps) {
-  // SVG画像のパスを選択
+  // next.config.jsからbasePath情報を取得
+  const { publicRuntimeConfig } = getConfig();
+  const basePath = publicRuntimeConfig?.basePath || '';
+
+  // SVG画像のパスを選択（basePathを追加）
   const getSvgPath = () => {
     switch (waveType) {
-      case 'left': return '/images/bg-left.svg';
-      case 'right': return '/images/bg-right.svg';
-      case 'wave': default: return '/images/wave.svg';
+      case 'left': return `${basePath}/images/bg-left.svg`;
+      case 'right': return `${basePath}/images/bg-right.svg`;
+      case 'wave': default: return `${basePath}/images/wave.svg`;
     }
   };
 

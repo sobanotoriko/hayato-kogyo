@@ -1,12 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: '/hayato-kogyo/',   // ← ここだけ残す
+  basePath: '/hayato-kogyo',
+  assetPrefix: '/hayato-kogyo/',
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],
   },
   serverExternalPackages: [],
+  publicRuntimeConfig: {
+    basePath: '/hayato-kogyo'
+  },
 };
 
 module.exports = nextConfig;
