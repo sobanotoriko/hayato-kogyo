@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>波形パターン（右向き）</title>
+    <g stroke="none" stroke-width="1" fill="#000066" fill-rule="evenodd">
+        <path d="M800,0 C700,80 640,120 600,160 C560,200 540,240 520,280 C500,320 480,380 440,420 C400,460 350,500 300,520 C250,540 200,560 100,580 L0,600 L800,600 Z"></path>
+    </g>
+</svg>
