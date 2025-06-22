@@ -6,6 +6,7 @@ const nextConfig = {
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],
+    unoptimized: true,
   },
   serverExternalPackages: [],
   publicRuntimeConfig: {
