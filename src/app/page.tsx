@@ -8,6 +8,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import Header from '../components/Header';
 import WaveBackground from '../components/WaveBackground';
 import '../app/water-effects.css';
+import { getImagePath } from '../utils/path';
 
 export default function Home() {
   // スライダー用の状態管理
@@ -36,17 +37,17 @@ export default function Home() {
   // スライダー用の画像配列
   const sliderImages = [
     { 
-      src: '/images/slide1.jpg', 
+      src: getImagePath('/images/slide1.jpg'), 
       alt: '給水設備工事の様子', 
       caption: '確かな技術で、安心の水環境を提供します' 
     },
     { 
-      src: '/images/slide2.jpg', 
+      src: getImagePath('/images/slide2.jpg'), 
       alt: 'ボイラー設置工事', 
       caption: '快適な温熱環境をお届けします' 
     },
     { 
-      src: '/images/slide3.jpg', 
+      src: getImagePath('/images/slide3.jpg'), 
       alt: '設備メンテナンス', 
       caption: '長期間安心して使える設備をお約束' 
     },

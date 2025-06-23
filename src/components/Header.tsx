@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import useSmoothScroll from '../hooks/useSmoothScroll';
+import { useSmoothScroll } from '../hooks/useSmoothScroll';
+import { getImagePath } from '../utils/path';
 
 export default function Header() {
   // スムーススクロール機能を適用
@@ -14,7 +15,7 @@ export default function Header() {
         <div className="flex items-center ml-4">
           <Link href="/" className="flex items-center group">
             <div className="w-28 h-28 overflow-hidden transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
-              <Image src="/images/logo.png" alt="隼仁工業ロゴ" width={112} height={112} style={{ objectFit: 'contain' }} />
+              <Image src={getImagePath('/images/logo.png')} alt="隼仁工業ロゴ" width={112} height={112} style={{ objectFit: 'contain' }} />
             </div>
             <span className="text-primary-dark text-2xl font-bold ml-3">隼仁工業</span>
           </Link>

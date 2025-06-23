@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { getImagePath } from '../utils/path';
 import { useState } from 'react';
 
 export default function ContactSection() {
@@ -68,7 +69,7 @@ export default function ContactSection() {
               <div className="space-y-6">
                 <div className="flex items-start mb-6">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 shadow-md">
-                    <Image src="/images/phone.png" alt="電話アイコン" width={24} height={24} />
+                    <Image src={getImagePath('/images/phone.png')} alt="電話アイコン" width={24} height={24} />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-200">お電話でのお問い合わせ</h4>
@@ -79,7 +80,7 @@ export default function ContactSection() {
                 
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 shadow-md">
-                    <Image src="/images/mail.png" alt="メールアイコン" width={24} height={24} />
+                    <Image src={getImagePath('/images/mail.png')} alt="メールアイコン" width={24} height={24} />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-200">メールでのお問い合わせ</h4>
@@ -92,13 +93,13 @@ export default function ContactSection() {
               <div className="mt-10 flex space-x-4">
                 <a href="tel:09048597375" className="bg-blue-100 text-blue-700 hover:bg-primary-600 hover:text-white px-6 py-3 rounded-md font-medium transition-all duration-300 flex items-center hover:shadow-lg hover:scale-105 group">
                   <div className="relative w-8 h-8 mr-2 flex items-center justify-center bg-white rounded-full transition-all duration-300">
-                    <Image src="/images/phone.png" alt="電話アイコン" width={24} height={24} />
+                    <Image src={getImagePath('/images/phone.png')} alt="電話アイコン" width={24} height={24} />
                   </div>
                   <span className="text-blue-700 group-hover:text-white">電話で相談</span>
                 </a>
                 <a href="mailto:hiroshi3164@hotmail.com" className="bg-blue-100 text-blue-700 hover:bg-primary-600 hover:text-white px-6 py-3 rounded-md font-medium transition-all duration-300 flex items-center hover:shadow-lg hover:scale-105 group">
                   <div className="relative w-8 h-8 mr-2 flex items-center justify-center bg-white rounded-full transition-all duration-300">
-                    <Image src="/images/mail.png" alt="メールアイコン" width={24} height={24} />
+                    <Image src={getImagePath('/images/mail.png')} alt="メールアイコン" width={24} height={24} />
                   </div>
                   <span className="text-blue-700 group-hover:text-white">メールで相談</span>
                 </a>

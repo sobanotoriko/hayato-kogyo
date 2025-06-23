@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import Header from '../../components/Header';
+import { getImagePath } from '../../utils/path';
 
 export default function CompanyContent() {
   // フェードインアニメーション設定
@@ -94,7 +95,7 @@ export default function CompanyContent() {
               </p>
               <div className="mt-4 w-full h-48 relative">
                 <Image
-                  src="/images/company/mission.jpg"
+                  src={getImagePath('/images/company/mission.jpg')}
                   alt="私たちの使命 - 隼仁工業の工事風景"
                   fill
                   style={{ objectFit: "cover" }}
@@ -120,7 +121,7 @@ export default function CompanyContent() {
             <div className="md:w-1/4">
               <div className="relative w-48 h-48 mx-auto">
                 <Image
-                  src="/images/company/president.jpg"
+                  src={getImagePath('/images/company/president.jpg')}
                   alt="代表取締役社長 山田隼人"
                   width={192}
                   height={192}
