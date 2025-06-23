@@ -116,17 +116,17 @@ export default function Home() {
     {
       title: '旅館全館給湯設備リニューアル',
       description: '老朽化した給湯設備を全面改修し、省エネ型の最新システムを導入。温泉旅館の安定した給湯を実現しました。',
-      image: '/images/project1.jpg',
+      image: getImagePath('/images/project1.jpg'),
     },
     {
       title: '住宅設備総合リフォーム',
       description: '築30年の住宅の水回り設備を一新。キッチン、浴室、トイレの給排水設備を最新のものに交換しました。',
-      image: '/images/project2.jpg',
+      image: getImagePath('/images/project2.jpg'),
     },
     {
       title: '店舗用エアコン設置工事',
       description: '新規オープンの飲食店に業務用エアコンを設置。店内の快適な温度環境を実現しました。',
-      image: '/images/project3.jpg',
+      image: getImagePath('/images/project3.jpg'),
     },
   ];
 
