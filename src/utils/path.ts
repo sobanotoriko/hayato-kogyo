@@ -12,18 +12,24 @@ export function getBasePath(): string {
  * basePath設定を考慮した正しいパスを返します
  */
 export function getImagePath(path: string) {
-  const basePath = getBasePath();
+  const bp = getBasePath();
   
   // パスが既にbasePathで始まっている場合はそのまま返す
-  if (path.startsWith(basePath)) {
-    return path;
+  if (path.startsWith(bp)) {
+    const result = path;
+    console.log('[getImagePath]', path, '→', result);
+    return result;
   }
   
   // パスの先頭が / で始まる場合
   if (path.startsWith('/')) {
-    return `${basePath}${path}`;
+    const result = `${bp}${path}`;
+    console.log('[getImagePath]', path, '→', result);
+    return result;
   }
   
   // それ以外の場合
-  return `${basePath}/${path}`;
+  const result = `${bp}/${path}`;
+  console.log('[getImagePath]', path, '→', result);
+  return result;
 }
