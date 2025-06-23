@@ -1,11 +1,10 @@
-import getConfig from 'next/config';
-
 /**
  * Next.jsのbasePath設定値を取得します
+ * 環境変数NEXT_PUBLIC_BASE_PATHを使用します
  */
-export function getBasePath() {
-  const { publicRuntimeConfig } = getConfig();
-  return publicRuntimeConfig?.basePath || '';
+export function getBasePath(): string {
+  // NEXT_PUBLIC_ プレフィックス付きはクライアント側でも読める
+  return process.env.NEXT_PUBLIC_BASE_PATH || '';
 }
 
 /**

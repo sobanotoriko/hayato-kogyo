@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
+const basePath = '/hayato-kogyo';
+
 const nextConfig = {
   output: 'export',
-  basePath: '/hayato-kogyo',
-  assetPrefix: '/hayato-kogyo/',
+  basePath,
+  assetPrefix: basePath + '/',
   images: {
     domains: [],
     formats: ['image/avif', 'image/webp'],
@@ -10,7 +12,10 @@ const nextConfig = {
   },
   serverExternalPackages: [],
   publicRuntimeConfig: {
-    basePath: '/hayato-kogyo'
+    basePath
+  },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
   },
 };
 
