@@ -38,18 +38,18 @@ export default function Home() {
   const sliderImages = [
     { 
       src: getImagePath('/images/slide1.jpg'), 
-      alt: '給水設備工事の様子', 
-      caption: '確かな技術で、安心の水環境を提供します' 
+      alt: '業務用エアコン工事・ボイラー交換工事', 
+      caption: '業務用エアコン工事・ボイラー交換工事は隼仁工業へ' 
     },
     { 
       src: getImagePath('/images/slide2.jpg'), 
-      alt: 'ボイラー設置工事', 
-      caption: '快適な温熱環境をお届けします' 
+      alt: '鉄骨階段・手すり・フェンス施工', 
+      caption: '長野県白馬村を拠点に、鉄骨階段・手すり施工や建築金物加工も全国対応' 
     },
     { 
       src: getImagePath('/images/slide3.jpg'), 
-      alt: '設備メンテナンス', 
-      caption: '長期間安心して使える設備をお約束' 
+      alt: '建設業の設備工事', 
+      caption: '機械室・ボイラー交換工事から設備メンテナンスまで' 
     },
   ];
   
@@ -166,7 +166,7 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <div className="bg-black/40 backdrop-blur-sm p-8 rounded-2xl inline-block mx-auto water-card shadow-2xl">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 fade-in text-white">
-                確かな技術と信頼で<br />水と暖らしを支えます
+                業務用エアコン工事・ボイラー交換工事は<br />隼仁工業
               </h1>
               <p className="text-xl md:text-2xl mb-8 fade-in text-white">
                 {sliderImages[currentSlide].caption}
@@ -218,8 +218,8 @@ export default function Home() {
       <WaveBackground id="services" className="py-16 water-ripple" waveType="right" bgColor="bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="bg-white/95 rounded-xl py-12 px-4 shadow-md">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">事業内容</h2>
-            <p className="text-center text-gray-700 mb-8 max-w-3xl mx-auto">長年の経験と確かな技術で、さまざまな水道工事・設備工事に対応しています</p>
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">隼仁工業が創る、白馬村発の建設・設備ソリューション</h2>
+            <p className="text-center text-gray-700 mb-8 max-w-3xl mx-auto">長野県白馬村を拠点に、業務用エアコン工事、鉄骨階段、手すり、建築金物加工まで全国対応で承ります</p>
             <div className="water-divider"></div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
@@ -269,8 +269,8 @@ export default function Home() {
       <WaveBackground id="projects" className="py-24 water-ripple" waveType="left" bgColor="bg-gradient-to-b from-blue-50 to-white">
         <div className="container mx-auto px-4">
           <div className="bg-white/95 rounded-xl py-12 px-4 shadow-md">
-            <h2 className="text-3xl font-bold text-center mb-6 text-gray-900">施工実績</h2>
-            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">長年の実績と確かな技術で信頼にお応えします</p>
+            <h2 className="text-3xl font-bold text-center mb-6 text-gray-900">業務用エアコン工事・金物加工の施工実績</h2>
+            <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">全国対応の設備工事、鉄骨階段・手すり施工、白馬村・長野県での実績多数</p>
             <div className="water-divider"></div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-center mt-10">
