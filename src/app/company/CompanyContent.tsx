@@ -51,8 +51,8 @@ export default function CompanyContent() {
               <table className="w-full border-collapse">
                 <tbody>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left py-3 pr-6 w-1/3 font-semibold text-gray-700">会社名</th>
-                    <td className="py-3 text-gray-800 font-medium">隼仁工業</td>
+                    <th className="text-left py-3 pr-6 w-1/3 font-semibold text-gray-700">社名</th>
+                    <td className="py-3 text-gray-800 font-medium">隼仁工業株式会社</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-3 pr-6 font-semibold text-gray-700">代表者</th>
@@ -60,7 +60,7 @@ export default function CompanyContent() {
                   </tr>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-3 pr-6 font-semibold text-gray-700">所在地</th>
-                    <td className="py-3 text-gray-800 font-medium">長野県北安曇郡白馬村北城829-17</td>
+                    <td className="py-3 text-gray-800 font-medium">長野県白馬村</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-3 pr-6 font-semibold text-gray-700">電話番号</th>
@@ -71,12 +71,12 @@ export default function CompanyContent() {
                     <td className="py-3 text-gray-800 font-medium">hiroshi3164@hotmail.com</td>
                   </tr>
                   <tr className="border-b border-gray-200">
-                    <th className="text-left py-3 pr-6 font-semibold text-gray-700">設立年</th>
-                    <td className="py-3 text-gray-800 font-medium">2005年4月</td>
+                    <th className="text-left py-3 pr-6 font-semibold text-gray-700">設立</th>
+                    <td className="py-3 text-gray-800 font-medium">2005年</td>
                   </tr>
                   <tr className="border-b border-gray-200">
                     <th className="text-left py-3 pr-6 font-semibold text-gray-700">事業内容</th>
-                    <td className="py-3 text-gray-800 font-medium">給排水設備工事、各種配管工事、業務用エアコン及び一般家庭用ルームエアコン工事</td>
+                    <td className="py-3 text-gray-800 font-medium">水道工事、空調設備工事、給排水工事</td>
                   </tr>
                   <tr>
                     <th className="text-left py-3 pr-6 font-semibold text-gray-700">許可・資格</th>
@@ -88,10 +88,9 @@ export default function CompanyContent() {
             <div className="bg-primary-50 p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-4">私たちの使命</h3>
               <p className="text-gray-700 mb-4">
-                隼仁工業は、「地域と共に、水と共に」をモットーに、高品質な給排水設備工事を提供しています。
-                常にお客様の視点に立ち、高品質な工事と丁寧なサービスを提供することで、
-                地域の皆様の暮らしを支えています。水道トラブルから大規模な設備工事まで、
-                幅広いニーズにお応えします。
+                株式会社隼仁工業は、白馬村を拠点に全国対応で、給排水設備・業務用空調・ボイラー交換など建築設備の工事を手がけています。<br />
+                「地域と共に、水と共に」という理念のもと、確かな技術と責任感で、お客様に信頼される施工を追求しています。<br />
+                住宅・施設・工場など、規模を問わず対応可能です。水回りのトラブルから機械室の改修まで、私たちにお任せください。
               </p>
               <div className="mt-4 w-full h-48 relative">
                 <Image
@@ -122,7 +121,7 @@ export default function CompanyContent() {
               <div className="relative w-48 h-48 mx-auto">
                 <Image
                   src={getImagePath('/images/company/president.jpg')}
-                  alt="代表取締役社長 山田隼人"
+                  alt="代表取締役 水野仁志"
                   width={192}
                   height={192}
                   className="rounded-full object-cover"
@@ -131,15 +130,17 @@ export default function CompanyContent() {
             </div>
             <div className="md:w-3/4">
               <p className="mb-4 text-gray-700">
-                隼仁工業は、「安心・安全な水環境の提供」を企業理念に掲げ、長野県を中心に給排水設備工事を行っております。
-                私たちの目標は、単なる工事会社ではなく、お客様の生活を支える「水のコンシェルジュ」となることです。
-              </p>
-              <p className="mb-4 text-gray-700">
-                設立以来、技術力の向上と誠実な対応を心がけ、多くのお客様からご信頼をいただいてまいりました。
-                これからも地域の皆様の快適な暮らしを実現するパートナーとして、社員一同、誠心誠意努めてまいります。
+                隼仁工業は、「安心・安全な水環境の提供」を企業理念に、長野県を中心に給排水設備や業務用設備工事を手がけております。<br />
+                私たちの目標は、ただの施工業者ではなく、生活や事業を支える「水のコンシェルジュ」として、皆様に信頼される存在であることです。<br /><br />
+
+                創業以来、現場の技術力はもちろんのこと、誠実な対応ときめ細やかなサービスを大切にしてまいりました。<br />
+                おかげさまで多くのお客様と長年にわたり信頼関係を築くことができ、社員一同、心より感謝しております。<br /><br />
+                これからも白馬村から全国へ、高品質な設備工事を通じて安心できる暮らしを支えてまいります。今後とも隼仁工業をどうぞよろしくお願いいたします。<br /><br />
+
+                ちなみに趣味はゴルフと釣りです。
               </p>
               <p className="font-semibold text-right text-gray-800">
-                代表取締役社長 山田 隼人
+                代表取締役 水野仁志
               </p>
             </div>
           </div>
@@ -158,10 +159,10 @@ export default function CompanyContent() {
           <h2 className="text-3xl font-bold text-gray-800 p-8 pb-4">アクセス</h2>
           <div className="p-8 pt-0">
             <p className="mb-4 text-gray-700">
-              〒380-0000<br />
+              〒399-9301<br />
               長野県北安曇郡白馬村北城829-17<br />
               TEL: 090-4859-7375<br />
-              FAX: 026-123-4568<br />
+              FAX: 0261-85-8050<br />
               E-mail: hiroshi3164@hotmail.com
             </p>
             <div className="h-96 w-full bg-gray-200 rounded-lg overflow-hidden mt-4">
@@ -182,7 +183,17 @@ export default function CompanyContent() {
 
       {/* トップページへ戻るリンク */}
       <div className="w-full text-center py-8">
-        <Link href="/" className="inline-block py-3 px-6 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors">
+        <Link 
+          href="/" 
+          className="inline-block py-3 px-6 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(() => {
+              window.location.href = '/';
+            }, 500); // スムーススクロール後に遷移
+          }}
+        >
           トップページへ戻る
         </Link>
       </div>

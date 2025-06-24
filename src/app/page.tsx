@@ -356,10 +356,10 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <h3 className="text-xl font-bold mb-4">隼仁工業株式会社</h3>
-              <p>水道工事・設備工事のプロフェッショナル</p>
-              <p className="mt-2">長野県○○市○○町1234-5</p>
-              <p>TEL: 026-XXX-XXXX</p>
-              <p>FAX: 026-XXX-XXXX</p>
+              <p>水道工事・設備工事全国対応</p>
+              <p className="mt-2">長野県白馬村北城829-17</p>
+              <p>TEL: 090-4859-7375</p>
+              <p>FAX: 0261-85-8050</p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4">事業内容</h3>

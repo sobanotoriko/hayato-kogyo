@@ -69,7 +69,7 @@ export default function ContactSection() {
               <div className="space-y-6">
                 <div className="flex items-start mb-6">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 shadow-md">
-                    <Image src={getImagePath('/images/phone.png')} alt="電話アイコン" width={24} height={24} />
+                    <Image src={getImagePath('/images/contact/phone-icon.png')} alt="電話アイコン" width={24} height={24} />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-200">お電話でのお問い合わせ</h4>
@@ -80,7 +80,7 @@ export default function ContactSection() {
                 
                 <div className="flex items-start">
                   <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center mr-4 shadow-md">
-                    <Image src={getImagePath('/images/mail.png')} alt="メールアイコン" width={24} height={24} />
+                    <Image src={getImagePath('/images/contact/mail-icon.png')} alt="メールアイコン" width={24} height={24} />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-200">メールでのお問い合わせ</h4>
