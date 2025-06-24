@@ -4,8 +4,11 @@ import './water-effects.css';
 import './navigation.css';
 
 export const metadata: Metadata = {
-  title: '隼仁工業 | 水道工事・設備工事のプロフェッショナル',
-  description: '長野県を中心に水道工事・ボイラー交換・給排水設備工事などを手がける隼仁工業の公式サイトです。',
+  title: '業務用エアコン工事・建築金物加工の隼仁工業｜白馬村・全国対応',
+  description: '白馬村の隼仁工業は、業務用エアコン工事、機械室・ボイラー交換工事、鉄骨階段・手すり・フェンス施工、建築金物加工など建設業を全国対応で承ります。安心・安全な設備工事のプロフェッショナル。',
+  alternates: {
+    canonical: 'https://sobanotoriko.github.io/hayato-kogyo/'
+  }
 };
 
 export default function RootLayout({
