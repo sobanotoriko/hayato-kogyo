@@ -3,6 +3,9 @@
 /* 以下はTailwindの既存レイヤーに追加する場合 */
 @layer base {
   /* ベーススタイルの追加 */
+  html {
+    scroll-padding-top: 112px; /* ヘッダーの高さ分（h-28 = 7rem = 112px）のパディングを追加 */
+  }
 }
 
 @layer components {
