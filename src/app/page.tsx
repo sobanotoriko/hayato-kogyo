@@ -85,7 +85,7 @@ export default function Home() {
       icon: '❄️',
     },
     {
-      title: 'ホテル・旅館ボイラー交換',
+      title: 'ホテル旅館ボイラー交換',
       description: '宿泊施設向けの大型ボイラー交換を専門に行います。省エネ機種への更新で運転コスト削減にも貢献します。',
       icon: '🏨',
     },
@@ -218,7 +218,7 @@ export default function Home() {
       <WaveBackground id="services" className="py-16 water-ripple" waveType="right" bgColor="bg-blue-50">
         <div className="container mx-auto px-4">
           <div className="bg-white/95 rounded-xl py-12 px-4 shadow-md">
-            <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">隼仁工業が創る、白馬村発の建設・設備ソリューション</h2>
+            <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">事業内容</h2>
             <p className="text-center text-gray-700 mb-8 max-w-3xl mx-auto">長野県白馬村を拠点に、業務用エアコン工事、鉄骨階段、手すり、建築金物加工まで全国対応で承ります</p>
             <div className="water-divider"></div>
             
@@ -286,7 +286,7 @@ export default function Home() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-500"></div>
                   </div>
                   <div className="p-8">
-                    <h3 className="text-xl font-bold mb-3 text-center text-primary-dark">{project.title}</h3>
+                    <h3 className="text-xl font-bold mb-3 text-center text-black">{project.title}</h3>
                     <p className="text-gray-600 text-center">{project.description}</p>
                   </div>
                 </div>
