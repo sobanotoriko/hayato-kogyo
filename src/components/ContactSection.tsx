@@ -135,9 +135,7 @@ export default function ContactSection() {
                         placeholder="例: 隼仁 太郎"
                       />
                       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-blue-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
+                        <Image src={getImagePath('/images/contact/phone-icon.png')} alt="電話アイコン" width={20} height={20} />
                       </div>
                     </div>
                   </div>
@@ -156,9 +154,7 @@ export default function ContactSection() {
                         placeholder="example@email.com"
                       />
                       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-blue-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                        </svg>
+                        <Image src={getImagePath('/images/contact/mail-icon.png')} alt="メールアイコン" width={20} height={20} />
                       </div>
                     </div>
                   </div>
@@ -176,9 +172,7 @@ export default function ContactSection() {
                         placeholder="例: 090-1234-5678"
                       />
                       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-blue-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
+                        <Image src={getImagePath('/images/contact/phone-icon.png')} alt="電話アイコン" width={20} height={20} />
                       </div>
                     </div>
                   </div>
@@ -197,9 +191,7 @@ export default function ContactSection() {
                         placeholder="お問い合わせの内容を入力してください"
                       ></textarea>
                       <div className="absolute top-3 left-3 text-blue-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                        </svg>
+                        <Image src={getImagePath('/images/contact/mail-icon.png')} alt="メッセージアイコン" width={20} height={20} />
                       </div>
                     </div>
                   </div>
@@ -221,9 +213,7 @@ export default function ContactSection() {
                         </>
                       ) : (
                         <>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2 group-hover:animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                          </svg>
+                          <Image src={getImagePath('/images/contact/mail-icon.png')} alt="送信アイコン" width={24} height={24} className="mr-2 group-hover:animate-pulse" />
                           <span className="text-lg font-semibold">お問い合わせを送信</span>
                         </>
                       )}

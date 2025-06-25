@@ -39,7 +39,7 @@ export default function Home() {
     { 
       src: getImagePath('/images/slide1.jpg'), 
       alt: '業務用エアコン工事・ボイラー交換工事', 
-      caption: '業務用エアコン工事・ボイラー交換工事は隼仁工業へ' 
+      caption: '業務用エアコン工事・ボイラー交換工事は\n<span class="font-bold text-lg">隼仁工業</span>へ' 
     },
     { 
       src: getImagePath('/images/slide2.jpg'), 
@@ -114,18 +114,18 @@ export default function Home() {
   // 施工事例の情報
   const projectItems = [
     {
-      title: '旅館全館給湯設備リニューアル',
-      description: '老朽化した給湯設備を全面改修し、省エネ型の最新システムを導入。温泉旅館の安定した給湯を実現しました。',
+      title: '新節床下土間配管工事の2階への排水配管工事の土間部分',
+      description: '床下空間を活かし、適切な勾配と振動・音対策を行いながら排水性能と耐久性の両立を図っています。<br/>建物全体の排水バランスに関わる重要な工程として、精度と安全性を最優先に施工しました。',
       image: getImagePath('/images/project1.jpg'),
     },
     {
-      title: '住宅設備総合リフォーム',
-      description: '築30年の住宅の水回り設備を一新。キッチン、浴室、トイレの給排水設備を最新のものに交換しました。',
+      title: '新節床下土間配管工事の給水給湯排水',
+      description: '設計図に基づいて正確にルートを確保し、基礎工事との干渉を避けつつ、将来的なメンテナンス性も考慮した施工を実施しています。<br/>見えない部分だからこそ丁寧に仕上げることで、安心して長く暑らせる住まいづくりを支えています。',
       image: getImagePath('/images/project2.jpg'),
     },
     {
-      title: '店舗用エアコン設置工事',
-      description: '新規オープンの飲食店に業務用エアコンを設置。店内の快適な温度環境を実現しました。',
+      title: '業務用エアコン天カセタイプ取り付け工事',
+      description: '室内の美観を損なわないよう天井内に本体を設置し、配管・電源・ドレン処理まで一括で対応。<br/>空調効率や風向きまで考慮した設置位置を選定し、快適で省エネな空間づくりに貢献しています。',
       image: getImagePath('/images/project3.jpg'),
     },
   ];
@@ -287,7 +287,7 @@ export default function Home() {
                   </div>
                   <div className="p-8">
                     <h3 className="text-xl font-bold mb-3 text-center text-black">{project.title}</h3>
-                    <p className="text-gray-600 text-center">{project.description}</p>
+                    <p className="text-gray-600 text-center" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                   </div>
                 </div>
               ))}
